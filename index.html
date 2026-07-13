@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddhiman Ghosh | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Riddhiman Ghosh, an aspiring junior web developer showcasing projects in JavaScript, HTML/CSS, Python, and Java.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background glow elements -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">RG<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="intro-tag">Available for Opportunities</span>
+            <h1 class="hero-title">Hi, I'm <span class="gradient-text">Riddhiman Ghosh</span></h1>
+            <h2 class="hero-subtitle">Aspiring Web Developer & Programmer</h2>
+            <p class="hero-desc">
+                An 18-year-old developer specializing in crafting clean, interactive frontend experiences and exploring backend integrations. Building functional applications to solve real-world problems.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-card">
+                <div class="card-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="card-title">developer.js</span>
+                </div>
+                <div class="card-body">
+                    <pre><code><span class="keyword">const</span> developer = {
+  name: <span class="string">'Riddhiman Ghosh'</span>,
+  age: <span class="number">18</span>,
+  skills: [
+    <span class="string">'HTML5'</span>, <span class="string">'CSS3'</span>, 
+    <span class="string">'JavaScript'</span>, <span class="string">'Python'</span>, 
+    <span class="string">'Java'</span>
+  ],
+  passion: <span class="string">'Building fluid web apps'</span>,
+  readyToLearn: <span class="boolean">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About & Skills Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-subtitle">Get to Know Me</span>
+            <h2 class="section-title">About Me & Skills</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>
+                    I am a highly motivated 18-year-old programmer with a deep interest in web development and software engineering. Without formal industry experience, I have dedicated myself to self-guided study and building projects that push my limits.
+                </p>
+                <p>
+                    From developing gesture-controlled applications in Python to interactive tools in Javascript, I love experimenting with different technologies to understand how they work under the hood. I am eager to apply this curiosity to a junior web development role where I can learn from experienced mentors and write clean, impactful code.
+                </p>
+            </div>
+            <div class="skills-wrapper">
+                <h3 class="skills-title">My Tech Stack</h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5 skill-icon html"></i>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt skill-icon css"></i>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js skill-icon js"></i>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python skill-icon python"></i>
+                        <span class="skill-name">Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-java skill-icon java"></i>
+                        <span class="skill-name">Java</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt skill-icon git"></i>
+                        <span class="skill-name">Git & GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-subtitle">My Creative Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-visual">
+                    <i class="fa-solid fa-computer-mouse project-placeholder-icon"></i>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenCV</span>
+                        <span class="tag">MediaPipe</span>
+                    </div>
+                    <h3 class="project-name">Gesture-Controlled Virtual Mouse</h3>
+                    <p class="project-desc">
+                        A Python application that enables users to control a computer mouse pointer virtually using real-time hand gestures and voice commands. Utilizes advanced computer vision libraries for hand landmark tracking.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JamesWalton69/Gesture-Controlled-Virtual-Mouse" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-visual">
+                    <i class="fa-solid fa-circle-nodes project-placeholder-icon"></i>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <h3 class="project-name">AiUniverseSimulator</h3>
+                    <p class="project-desc">
+                        An interactive simulator that uses Vanilla JavaScript, HTML, and CSS to visualize complex nodes and environments dynamically directly inside the browser.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JamesWalton69/AiUniverseSimulator" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> View Repository</a>
+                        <a href="https://ai-universe-simulator.vercel.app" target="_blank" class="project-link-btn live"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-visual">
+                    <i class="fa-solid fa-check-to-slot project-placeholder-icon"></i>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <h3 class="project-name">AnimeVote</h3>
+                    <p class="project-desc">
+                        A customized voting application designed for a school anime notice board. Demonstrates dynamic UI rendering and robust user interactions built using lightweight web elements.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JamesWalton69/animevote" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-visual">
+                    <i class="fa-solid fa-images project-placeholder-icon"></i>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <h3 class="project-name">ANYtoPNG</h3>
+                    <p class="project-desc">
+                        A web utility tool created to seamlessly convert various file formats into standard PNG images. Showcases client-side file reading, canvas manipulation, and fast downloads.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JamesWalton69/ANYtoPNG" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-visual">
+                    <i class="fa-solid fa-code project-placeholder-icon"></i>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <h3 class="project-name">GLOB-EDITOR</h3>
+                    <p class="project-desc">
+                        A modular, developer-friendly code/glob editing interface designed to run inside the web browser. Made to simplify parsing and matching files via customizable patterns.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/JamesWalton69/GLOB-EDITOR" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> View Repository</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-subtitle">Let's Connect</span>
+            <h2 class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's start a conversation!</h3>
+                <p>I am actively seeking junior web development positions, internships, or open-source collaboration. Feel free to reach out if you have an opportunity or want to talk tech.</p>
+                <div class="info-list">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>manghosh@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-github"></i>
+                        <span>github.com/JamesWalton69</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required placeholder="Hi Riddhiman, I'd like to work with you..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Riddhiman Ghosh. Built with passion and Vanilla technologies.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/JamesWalton69" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:manghosh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
