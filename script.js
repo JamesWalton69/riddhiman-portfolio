@@ -51,33 +51,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 3. Contact Form Submission (Mock)
+    // 3. Contact Form Submission (Interactive Plane & Overlay)
     const contactForm = document.getElementById('contact-form');
-    const formStatus = document.getElementById('form-status');
     const submitBtn = document.getElementById('submit-btn');
+    const successOverlay = document.getElementById('success-overlay');
+    const closeSuccessBtn = document.getElementById('close-success-btn');
 
-    if (contactForm) {
+    if (contactForm && successOverlay) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             
-            // Disable button and show sending status
+            // Add sending status and trigger plane flight CSS animation
             submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
-            formStatus.className = 'form-status';
-            formStatus.textContent = '';
-
-            // Simulate form submission delay
+            submitBtn.classList.add('sending');
+            
+            // Wait for plane flight animation to complete before showing overlays
             setTimeout(() => {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
-                
-                // Show success status
-                formStatus.className = 'form-status success';
-                formStatus.textContent = 'Message sent successfully! Thank you for reaching out.';
-                
-                // Clear form fields
+                successOverlay.classList.add('active');
                 contactForm.reset();
-            }, 1500);
+            }, 1200);
+        });
+
+        // Close Success Screen
+        closeSuccessBtn.addEventListener('click', () => {
+            successOverlay.classList.remove('active');
+            
+            // Restore button state
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('sending');
         });
     }
 
