@@ -420,9 +420,12 @@ section {
 .skill-icon.html { color: #e34c26; }
 .skill-icon.css { color: #264de4; }
 .skill-icon.js { color: #f0db4f; }
+.skill-icon.ts { color: #3178c6; }
+.skill-icon.react { color: #61dbfb; }
 .skill-icon.python { color: #306998; }
 .skill-icon.java { color: #f89820; }
 .skill-icon.git { color: #f1502f; }
+
 
 .skill-name {
     font-weight: 600;
